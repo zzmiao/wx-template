@@ -17,7 +17,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
 	"appid": "wxcb92a8b5f18e76eb",
-	"projectname": "exercise-1",
+	"projectname": "wx-template",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
