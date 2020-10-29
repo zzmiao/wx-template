@@ -1,0 +1,90 @@
+/* components/images-box/images-box.wxss */
+.images-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-li {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx 20rpx;
+}
+
+/* 弹出框-start */
+
+.pupop-imgWrap {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pupop-in {
+  opacity: 1;
+  z-index: 2015;
+}
+
+.pupop-fade {
+  opacity: 0;
+  z-index: -100000;
+}
+
+.pupop-imgbox {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.pupop-img {
+  display: block;
+  position: absolute;
+  width: 0;
+}
+.pupop-img-transtion{
+  transition: all 0.3s;
+}
+
+.pupop-footer {
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  z-index: 100;
+}
+
+.pupop-footermenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pupop-footermenu text {
+  border-radius: 10rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #fff;
+  margin: auto 10rpx;
+  padding: 10rpx 15rpx;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pupop-close {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+}
+
+/* 弹出框-end */

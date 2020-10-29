@@ -1,0 +1,5 @@
+<!--pages/canvas/canvas.wxml-->
+<view class="container">
+  <canvas canvas-id="my_canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;margin:100rpx auto"></canvas>
+  <button type="primary" bindtap="saveImages">保存图片</button>
+</view> 

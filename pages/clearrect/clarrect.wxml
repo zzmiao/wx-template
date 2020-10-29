@@ -1,0 +1,7 @@
+<!--pages/clearrect/clarrect.wxml-->
+<view class="container">
+  <view class="clearrect-box">
+    <image src="../../images/success.png" class="clearrect-images"></image>
+    <canvas canvas-id="clear-canvas" class="clear-canvas" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+  </view>
+</view>

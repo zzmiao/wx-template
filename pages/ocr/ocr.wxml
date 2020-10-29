@@ -1,0 +1,27 @@
+<!--pages/certification/ocr/ocr.wxml-->
+<view class='form-container' style="background:#fff">
+  <view class="rowContainer first">
+    <view class="item">
+      <view class="item-img">
+        <image class="img" src="{{imgFront}}" mode='aspectFit' bindtap="onIdCardFront" style="{{hideCancelImgFront?'':'background-color: #effbe8;border: solid #91dab3 5rpx;border-radius: 15rpx;'}}"></image>
+        <image class='cancelImg' src='/images/ocr/del.png' mode='aspectFit' bindtap='onCancelFront' hidden='{{hideCancelImgFront}}'></image>
+      </view>
+      <view class="item-title">
+        <text class="txt">身份证头像面</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="rowContainer">
+    <view class="item">
+      <view class="item-img">
+        <image class="img" src="{{imgBack}}" mode='aspectFit' bindtap="onIdCardBack" style="{{hideCancelImgBack?'':'background-color: #effbe8;border: solid #91dab3 5rpx;border-radius: 15rpx;'}}"></image>
+        <image class='cancelImg' src='/images/ocr/del.png' mode='aspectFit' bindtap='onCancelBack' hidden='{{hideCancelImgBack}}'></image>
+      </view>
+      <view class="item-title">
+        <text class="txt">身份证国徽面</text>
+      </view>
+    </view>
+  </view>
+  <button class="submit" bindtap="onButtonOcr" disabled='{{ocrButtonDisable}}'>下一步</button>
+</view>

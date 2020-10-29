@@ -1,0 +1,7 @@
+<!--pages/star/star.wxml-->
+<view class="star-box">
+     <image class="start-img"  wx:for="{{starsDescribe}}" wx:key="*this" data-title="{{item.message}}" data-index="{{index+1}}" src="{{starNumber>=(index+1)?starok:starno}}" bindtap="changeStar"></image>
+     <text class="star-msg">{{comment}}</text>
+</view>
+
+

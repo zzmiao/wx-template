@@ -1,0 +1,7 @@
+<!--pages/componentImages/componentImages.wxml-->
+
+
+<block wx:for="{{data}}" wx:for-index="index" wx:for-item="item">
+  <view>{{item.title}}</view>
+  <imagesBox imgList="{{item.img}}" />
+</block>

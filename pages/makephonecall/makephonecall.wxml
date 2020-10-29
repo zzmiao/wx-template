@@ -1,0 +1,4 @@
+<!--pages/makephonecall/makephonecall.wxml-->
+<button disabled="{{false}}" type="primary" style="margin-top:200rpx;" data-phone="18895355787" bindtap="callPhone">拨打电话</button>
+
+<button type="primary" style="margin-top:100rpx;" bindtap="scanCode">扫码</button>

@@ -1,0 +1,9 @@
+<!--pages/animation/index.wxml-->
+<view class="container" style="border:1px solid red;min-height:500rpx;">
+  <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+
+
+
+  <view animation="{{showRotate}}" style="border:1px solid red;width:100rpx;height:100rpx;margin:200rpx auto;">123</view>
+  <button bindtap="rotate" type="primary">旋转</button>
+</view>

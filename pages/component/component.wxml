@@ -1,0 +1,6 @@
+<!--pages/component/component.wxml-->
+<componentsSwiper contentText="{{content}}" imgList="{{['数据','数据','数据','数据']}}" />
+
+<view style="text-align:center;margin-top:20rpx;">共 {{count}} 条数据</view>
+
+<dataList id="list" dataArray="{{dataObject}}" bind:getDataFromChilren="fatherEvent" /> 

@@ -1,0 +1,63 @@
+/* pages/writename/writename.wxss */
+
+.wrapper {
+  width: 100%;
+  height: 95vh;
+  margin: 30rpx 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.handWriting {
+  background: #fff;
+  width: 100%;
+  height: 95vh;
+}
+
+.handRight {
+  width: 10%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.handCenter {
+  border: 4rpx dashed #e9e9e9;
+  width: 75%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.handTitle {
+  transform: rotate(90deg);
+  color: #666;
+  white-space: nowrap;
+}
+
+.handBtn button {
+  font-size: 28rpx;
+}
+
+.handBtn {
+  height: 95vh;
+  width: 15%;
+}
+
+.delBtn, .subBtn {
+  width: 100rpx !important;
+  min-height: 60rpx !important;
+  line-height: 60rpx;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  margin-top: 50rpx;
+  padding: 0px;
+}
+
+.delBtn {
+  background-color: #f00;
+  color: #fff;
+}
+
+.subBtn {
+  background-color: #00a2ef;
+  color: #fff;
+}

@@ -1,0 +1,124 @@
+/**index.wxss**/
+
+page {
+  background-color: #fff;
+}
+
+.item-li {
+  border-bottom: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -1rpx;
+}
+
+.form-li-label, .form-li-input {
+  height: 100rpx;
+}
+
+.form-li-label {
+  width: 30%;
+  font-size: 32rpx;
+  color: #493728;
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+}
+
+.form-li-input {
+  width: 70%;
+  line-height: 100rpx;
+  position: relative;
+}
+
+.form-li-radio-group {
+  width: 70%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-li-radio {
+  margin-right: 10rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+}
+
+.form-li-radio radio {
+  transform: scale(0.7);
+}
+
+.form-li-picker-text {
+  height: 98rpx;
+  display: flex;
+  align-items: center;
+}
+
+.form-li-view {
+  width: 70%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-li-input-right {
+  padding-left: 20rpx;
+  height: 98rpx;
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 32rpx;
+}
+
+.form-li-message-input {
+  width: 50%;
+  height: 100rpx;
+  padding-left: 40rpx;
+}
+
+.form-li-getmsg-btn {
+  width: 50%;
+  height: 100rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a2ef;
+  color: #fff;
+}
+
+.form-li-disabled {
+  background-color: #ccc;
+}
+
+.form-submit-btn {
+  width: 90%;
+  margin-top: 50rpx;
+  border-radius: 50rpx;
+  background-color: #00a2ef;
+  color: #fff;
+  margin-bottom: 200rpx;
+}
+
+.form-li-img {
+  width: 70%;
+}
+
+.form-img-box {
+  display: inline-block;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+
+.fotm-add-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.form-cancel-icon {
+  margin-left: -42rpx;
+}
+
+

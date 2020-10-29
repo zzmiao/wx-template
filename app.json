@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/userAuthorize/user",
+    "pages/menu/menu",
+    "pages/shouquan/shouquan",
+    "pages/writename/writename",
+    "pages/editor/editor",
+    "pages/checkbox/checkbox",
+    "pages/component/component",
+    "pages/swiper/swiper",
+    "pages/scrollView/scrollview",
+    "pages/floatblock/floatbox",
+    "pages/animation/index",
+    "pages/index/index",
+    "pages/makephonecall/makephonecall",
+    "pages/canvas/canvas",
+    "pages/ocr/ocr",
+    "pages/clearrect/clarrect",
+    "pages/star/star",
+    "pages/starMore/starmore",
+    "pages/imagesBox/imagesbox",
+    "pages/componentImages/componentImages"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于获取附近门店"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "componentsSwiper": "../../components/component-swiper/component-swiper",
+    "dataList": "../../components/data-list/data-list",
+    "imagesBox": "../../components/images-box/images-box"
+  }
+}

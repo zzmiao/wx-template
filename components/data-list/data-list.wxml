@@ -1,0 +1,15 @@
+<!--components/data-list/data-list.wxml-->
+<view class="list-wrap">
+  <view class="list-item" wx:for="{{dataArray}}" wx:key="dataList" wx:for-item="value" wx:for-index="idx">
+    <view class="list-item-title">{{value.name}}</view>
+    <view class="list-item-content">{{value.content}}</view>
+    <view class="list-item-footer">
+      <view class="list-item-footer-left" style="flex:1">
+        <button class="list-btn cancel-btn" data-id="{{value.id}}" data-index="{{idx}}" bindtap="deleteBtn">删除</button>
+      </view>
+      <view class="list-item-footer-right" style="flex:1">
+        <button class="list-btn confirm-btn" data-id="{{value.id}}" data-index="{{idx}}" bindtap="confirmBtn">确认</button>
+      </view>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,20 @@
+<!--pages/scrollView/scrollview.wxml-->
+<view class="container">
+  <scroll-view class="scroll-wrap" scroll-y enable-back-to-top="true" scroll-with-animation="true" scroll-top="{{scrollTop}}" bindscroll="scrollFunction" style="height:{{screenHeight}}px;">
+    <view class="view-content" style="position:absolute">
+
+      <view style="border:1px solid red;width:90%;height:100rpx;margin:auto;margin-top:20rpx;display:flex;align-items: center;justify-content: center;">Header</view>
+
+      <componentsSwiper contentText="{{scrollTop}}" imgList="{{imgArr}}"></componentsSwiper>
+
+      <view style="border:1px solid red;width:90%;height:400rpx;margin:20rpx auto;display:flex;align-items: center;justify-content: center;">swiper</view>
+
+      <view style="border:1px solid red;width:90%;height:2200rpx;margin:20rpx auto;display:flex;align-items: center;justify-content: center;">content</view>
+
+      <view style="border:1px solid red;width:90%;height:100rpx;margin:20rpx auto;display:flex;align-items: center;justify-content: center;">footer</view>
+
+    </view>
+
+  </scroll-view>
+  <image hidden="{{!isShowScrollBtn}}" src="/images/success.png" bindtap="scrollBackTop" style="position:fixed;bottom:100rpx;right:10rpx;width:100rpx;height:100rpx;"></image>
+</view>

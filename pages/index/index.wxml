@@ -1,0 +1,78 @@
+<!--index.wxml-->
+
+<view class="container">
+  <form bindsubmit="submitApply">
+    <view class="item-li">
+      <text class="form-li-label">真实姓名:</text>
+      <input type="text" class="form-li-input" placeholder="请输入真实姓名" />
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">身份证号:</text>
+      <input type="idcard" class="form-li-input" placeholder="请输入身份证号" bindinput="getIdCard" />
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">地址:</text>
+      <text class="form-li-input">{{province}}-{{city}}</text>
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">位置:</text>
+      <text class="form-li-input">{{address}}</text>
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">职业:</text>
+      <radio-group class="form-li-radio-group" bindchange="radioChange">
+        <label class="form-li-radio">
+          <radio value="工薪人士" color="#00a2ef" checked="" />
+          <text>工薪人士</text>
+        </label>
+        <label class="form-li-radio">
+          <radio value="私营业主" color="#00a2ef" checked="" />
+          <text>私营业主</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">贷款用途:</text>
+      <picker class="form-li-input picker" mode="selector" value="{{loanUseIndex}}" range="{{loanUse}}" bindchange="getLoadUse">
+        <text class="form-li-picker-text">{{loanUse[loanUseIndex]}}</text>
+      </picker>
+    </view>
+    <view class="item-li">
+      <text class="form-li-label">贷款金额:</text>
+      <view class="form-li-view">
+        <input class="form-li-input" placeholder="请输入贷款金额" type="number" />
+        <text class="form-li-input-right">万元</text>
+      </view>
+
+    </view>
+
+    <view class="item-li">
+      <text class="form-li-label">上传图片:</text>
+      <view class="form-li-img">
+        <block wx:for="{{images}}" wx:for-item="src" wx:key="*this" wx:for-index="idx">
+          <view class="form-img-box">
+            <image src="{{src}}" data-index="{{idx}}" class="fotm-add-img"></image>
+            <icon class="form-cancel-icon" type="cancel" size="20" data-index="{{idx}}" bindtap="cancelImg" />
+          </view>
+        </block>
+        <image src="../../images/btn_add.png" class="fotm-add-img" style="margin-top:10rpx;" bindtap="uploadImages"></image>
+      </view>
+    </view>
+
+
+    <view class="item-li ">
+      <text class="form-li-label">手机号码:</text>
+      <input type="number" class="form-li-input" maxlength="11" placeholder="请输入手机号码" bindinput="getPhone" />
+    </view>
+
+    <view class="item-li">
+      <input type="number" class="form-li-message-input" placeholder="短信验证码" maxlength="6" bindinput="getMsgVerifyCode" />
+      <text wx:if="{{verifyStatus}}" class="form-li-getmsg-btn" bindtap="getVerifyCode">{{verfityText}}</text>
+      <text wx:else class="form-li-getmsg-btn form-li-disabled">获取验证码</text>
+    </view>
+
+    <button class="form-submit-btn" disabled="{{submitStatus}}" type="default" form-type="submit">立即申请</button>
+
+
+  </form>
+</view>

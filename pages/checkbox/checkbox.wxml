@@ -1,0 +1,26 @@
+<!--pages/checkbox/checkbox.wxml-->
+<label bindtap="checkboxRadio">
+  <checkbox value="{{checkboxText}}" checked="{{curChooseStatus}}"></checkbox>
+  <text>全选</text>
+</label>
+<view>====================================</view>
+<view wx:for="{{singleArr}}" wx:key="single" wx:for-item="val" wx:for-index="idx">
+  <label bindtap="checkboxRadioSingle" data-index="{{idx}}" data-checked="{{val.checked}}">
+    <checkbox value="{{val.name}}" checked="{{val.checked}}" data-index="{{idx}}" data-checked="{{val.checked}}"></checkbox>
+    <text>{{val.value}}</text>
+  </label>
+</view>
+
+<view>总计：{{totalPrice}}</view>
+
+<view>====================================</view>
+
+<view>checkbox-group</view>
+
+<checkbox-group bindchange="checkboxChange">
+  <view wx:for="{{items}}" wx:key="checkbox">
+    <label class="checkbox">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </label>
+  </view>
+</checkbox-group>

@@ -1,0 +1,18 @@
+/* pages/star/star.wxss */
+
+.star-box {
+  border: 1rpx solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.start-img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.star-msg {
+  line-height: 60rpx;
+  margin-left: 50rpx;
+}

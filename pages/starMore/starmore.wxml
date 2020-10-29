@@ -1,0 +1,6 @@
+<!--pages/starMore/starmore.wxml-->
+<view class="star-box" wx:for="{{list}}" wx:for-item="box" wx:for-index="key" wx:key="*this">
+  <text class="star-msg">{{box.name}}</text>
+  <image class="start-img" wx:for="{{starsDescribe}}" wx:key="*this" data-id="{{key}}" data-title="{{item.message}}" data-index="{{index+1}}" src="{{box.score>=(index+1)?starok:starno}}" bindtap="changeStar"></image>
+  <text class="star-msg">{{starsDescribe[box.score-1].message}}</text>
+</view>

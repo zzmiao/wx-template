@@ -1,0 +1,7 @@
+<!--components/component-swiper/component-swiper.wxml-->
+<view class="component-title">{{title}}</view>
+<view class="swiper-wrap" style="margin-top:10rpx;">
+  <swiper class="swiper-box" indicator-dots="true" indicator-color="#00a2ef" indicator-active-color="black" autoplay="true" circular="true" display-multiple-items="1">
+    <swiper-item class="swiper-item-box" wx:for="{{imgList}}" wx:key="swiperitem" wx:for-index="idx" wx:for-item="value">{{value}}{{idx}}</swiper-item>
+  </swiper>
+</view>

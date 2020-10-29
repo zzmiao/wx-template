@@ -1,0 +1,19 @@
+/* pages/component/component.wxss */
+.swiper-box .wx-swiper-dot {
+  width: 20rpx;
+  display: inline-flex;
+  height: 10rpx;
+  margin-left: 20rpx;
+  justify-content: space-between;
+}
+
+.swiper-box .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: #003989;
+  border-radius: 8rpx;
+}
+
+.swiper-box .wx-swiper-dot-active::before {
+  background: #f39500;
+}

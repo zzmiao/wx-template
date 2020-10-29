@@ -1,0 +1,81 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.4",
+	"appid": "wxcb92a8b5f18e76eb",
+	"projectname": "exercise-1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/star/star",
+					"pathName": "pages/star/star",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/starMore/starmore",
+					"pathName": "pages/starMore/starmore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/imagesBox/imagesbox",
+					"pathName": "pages/imagesBox/imagesbox",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/componentImages/componentImages",
+					"pathName": "pages/componentImages/componentImages",
+					"scene": null
+				}
+			]
+		}
+	}
+}

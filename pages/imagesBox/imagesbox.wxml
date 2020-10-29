@@ -1,0 +1,31 @@
+<!--pages/imagesBox/imagesbox.wxml-->
+<view class="images-box">
+  <block wx:for="{{imgList}}" wx:for-index="idx" wx:for-item="item">
+    <image class="images-li" src="{{item.url}}" data-index="{{idx}}" bindtap="viewPictures"></image>
+  </block>
+</view>
+<!-- 弹出框-start -->
+<view class="pupop-imgWrap {{isShowPupop?'pupop-in':'pupop-fade'}}">
+  <!-- 图片-start -->
+  <view class="pupop-imgbox">
+    <image src="{{currentImg}}" catchtouchstart="startTouchMove" catchtouchmove="moveTouchMove" catchtouchend="endTouchMove" class="pupop-img {{ismove?'pupop-img-transtion':''}}" style="width:{{imgWidth}}px;height:{{imgHeight}}px;transform:rotate({{isRotate}}deg) scaleY({{isScaleY}}) scale({{scale}});margin-top:{{mgtop}}px;margin-left:{{mgleft}}px"></image>
+  </view>
+  <!-- 图片-end -->
+  <!-- 操作按钮-start -->
+  <view class="pupop-footer">
+    <view class="pupop-footermenu">
+      <text bindtap="enlarge">大</text>
+      <text bindtap="narrow">小</text>
+      <text bindtap="prev">上</text>
+      <text bindtap="next">下</text>
+      <text bindtap="rotateleft">左</text>
+      <text bindtap="rotateright">右</text>
+      <text bindtap="rotatescale">上下</text>
+    </view>
+  </view>
+  <!-- 操作按钮-end -->
+  <!-- 关闭按钮-start -->
+  <image src="../../images/imgList/close.png" class="pupop-close" bindtap="closePupop"></image>
+  <!-- 关闭按钮-end -->
+</view>
+<!-- 弹出框-end -->

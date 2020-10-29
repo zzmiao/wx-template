@@ -1,0 +1,23 @@
+<!--pages/swiper/swiper.wxml-->
+<view class="container">
+  <view class="swiper-wrap">
+    <swiper class="swiper-box" indicator-dots="true" indicator-color="#00a2ef" indicator-active-color="black" autoplay="true" circular="true" display-multiple-items="1" bindchange="changeSwiper">
+      <swiper-item class="swiper-item-box">{{swiperText}}1</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}2</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}3</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}4</swiper-item>
+    </swiper>
+  </view>
+
+  <view class="swiper-wrap" style="margin-top:100rpx;">
+    <swiper class="swiper-box" indicator-dots="true" indicator-color="#00a2ef" indicator-active-color="black" autoplay="true" circular="true" display-multiple-items="2" bindchange="changeSwiper">
+      <swiper-item class="swiper-item-box">{{swiperText}}1</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}2</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}3</swiper-item>
+      <swiper-item class="swiper-item-box">{{swiperText}}4</swiper-item>
+    </swiper>
+  </view>
+
+  <componentsSwiper contentText="{{content}}" imgList="{{['组件轮播图','组件轮播图','组件轮播图']}}"></componentsSwiper>
+
+</view>

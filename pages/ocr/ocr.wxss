@@ -1,0 +1,76 @@
+/* pages/certification/ocr/ocr.wxss */
+
+page {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.rowContainer {
+  padding: 0 40rpx 40rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first {
+  padding-top: 40rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+}
+
+.item-img {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/** 身份证长宽比1.5852*/
+
+.img {
+  /* background-color: #effbe8;
+  border: solid #91dab3 5rpx;
+  border-radius: 15rpx; */
+  align-self: center;
+  height: 356.45rpx;
+  width: 555rpx;
+}
+
+.cancelImg {
+  z-index: 999;
+  position: absolute;
+  top: 17rpx;
+  right: 70rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item-title {
+  padding-top: 10rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.zhrbutton {
+  height: 92rpx;
+  line-height: 92rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background: #fa9c3e;
+  color: #fff;
+}
+
+.zhrbutton[disabled] {
+  background: #ccc !important;
+  color: #fff !important;
+}

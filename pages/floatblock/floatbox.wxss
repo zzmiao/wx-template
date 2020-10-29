@@ -1,0 +1,13 @@
+/* pages/floatblock/floatbox.wxss */
+.firstView {
+  position: fixed;
+  height: 80rpx;
+  width: 80rpx;
+  padding: 5rpx 5rpx;
+  background-color: #35d75d;
+  border-radius: 50%;
+}
+.kehuImg {
+  height: 70rpx;
+  width: 70rpx;
+}

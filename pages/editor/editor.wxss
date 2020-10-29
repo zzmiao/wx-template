@@ -1,0 +1,39 @@
+/* pages/editor/editor.wxss */
+@import "../../libs/iconfont.wxss";
+
+.editor-header {
+  width: 100%;
+  padding: 20rpx;
+}
+
+.ql-container {
+  box-sizing: border-box;
+  padding: 12px 15px;
+  width: 100%;
+  min-height: 400rpx;
+  height: auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ql-active {
+  color: #06c;
+}
+
+.iconfont {
+  display: inline-block;
+  padding: 16rpx 16rpx;
+  width: 48rpx;
+  height: 48rpx;
+  cursor: pointer;
+  font-size: 48rpx;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-bottom: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}

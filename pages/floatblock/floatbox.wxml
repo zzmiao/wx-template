@@ -1,0 +1,10 @@
+<!--pages/floatblock/floatbox.wxml-->
+<view class="container" style="border:1px solid red;min-height:600rpx;">
+
+</view>
+
+<view class="firstView" catchtouchmove="setTouchMove" catchtouchend='setCoordinates' style="left: {{left||'85%'}};top: {{top||'40%'}};">
+  <view>
+    <image class='kehuImg' bindtap='makephone' src="/images/feedback.png"></image>
+  </view>
+</view>
