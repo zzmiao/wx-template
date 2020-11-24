@@ -19,7 +19,8 @@
     "pages/star/star",
     "pages/starMore/starmore",
     "pages/imagesBox/imagesbox",
-    "pages/componentImages/componentImages"
+    "pages/componentImages/componentImages",
+    "pages/signOneName/signOneName"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -12,129 +12,134 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     console.log(app.globalData.isAuth)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   },
-  toForm: function(e) {
+  toSignName: function (e) {
+    wx.navigateTo({
+      url: "/pages/signOneName/signOneName",
+    })
+  },
+  toForm: function (e) {
     wx.navigateTo({
       url: "/pages/index/index",
     })
   },
-  toCanvas: function() {
+  toCanvas: function () {
     wx.navigateTo({
       url: "/pages/canvas/canvas",
     })
   },
-  toPhone: function() {
+  toPhone: function () {
     wx.navigateTo({
       url: "/pages/makephonecall/makephonecall",
     })
   },
-  toMoveFloatBox: function() {
+  toMoveFloatBox: function () {
     wx.navigateTo({
       url: "/pages/floatblock/floatbox",
     })
   },
-  toAnimation: function() {
+  toAnimation: function () {
     wx.navigateTo({
       url: "/pages/animation/index",
     })
   },
-  toScrollBackTop: function() {
+  toScrollBackTop: function () {
     wx.navigateTo({
       url: "/pages/scrollView/scrollview",
     })
   },
-  toSwiper: function() {
+  toSwiper: function () {
     wx.navigateTo({
       url: "/pages/swiper/swiper",
     })
   },
-  toComponent: function() {
+  toComponent: function () {
     wx.navigateTo({
       url: "/pages/component/component",
     })
   },
-  toCheckRadio: function() {
+  toCheckRadio: function () {
     wx.navigateTo({
       url: "/pages/checkbox/checkbox",
     })
   },
-  toEditor: function() {
+  toEditor: function () {
     wx.navigateTo({
       url: "/pages/editor/editor",
     })
   },
-  toWrite: function() {
+  toWrite: function () {
     wx.navigateTo({
       url: "/pages/writename/writename",
     })
   },
-  toStarSingle: function() {
+  toStarSingle: function () {
     wx.navigateTo({
       url: "/pages/star/star",
     })
   },
-  toStarMore: function() {
+  toStarMore: function () {
     wx.navigateTo({
       url: "/pages/starMore/starmore",
     })
   },
-  toAuthorize: function() {
+  toAuthorize: function () {
     wx.navigateTo({
       url: "/pages/shouquan/shouquan",
     })
   },
-  toPupopImages: function() {
+  toPupopImages: function () {
     wx.navigateTo({
       url: "/pages/imagesBox/imagesbox",
     })

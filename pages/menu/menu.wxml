@@ -1,52 +1,55 @@
 <!--pages/menu/menu.wxml-->
 <view class="container">
-  <view class="header-wrap">功能实例</view>
+	<view class="header-wrap">功能实例</view>
 
-  <view class="menu-box shadow">
-    <view class="menu-li arrow arrowRight" bindtap="toForm">
-      <text>表单</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toCanvas">
-      <text>画图</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toPhone">
-      <text>打电话</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toMoveFloatBox">
-      <text>可拖动悬浮框</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toAnimation">
-      <text>动态效果</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toScrollBackTop">
-      <text>滚动返回顶部</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toSwiper">
-      <text>轮播图</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toPupopImages">
-      <text>图片弹框</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toComponent">
-      <text>组件以及组件传值</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toCheckRadio">
-      <text>多选和单选</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toEditor">
-      <text>富文本编辑器</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toWrite">
-      <text>书写板</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toStarSingle">
-      <text>星星评分单个</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toStarMore">
-      <text>星星评分多个</text>
-    </view>
-    <view class="menu-li arrow arrowRight" bindtap="toAuthorize">
-      <text>经纬度授权</text>
-    </view>
-  </view>
+	<view class="menu-box shadow">
+		<view class="menu-li arrow arrowRight" bindtap="toSignName">
+			<text>签名</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toForm">
+			<text>表单</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toCanvas">
+			<text>画图</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toPhone">
+			<text>打电话</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toMoveFloatBox">
+			<text>可拖动悬浮框</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toAnimation">
+			<text>动态效果</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toScrollBackTop">
+			<text>滚动返回顶部</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toSwiper">
+			<text>轮播图</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toPupopImages">
+			<text>图片弹框</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toComponent">
+			<text>组件以及组件传值</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toCheckRadio">
+			<text>多选和单选</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toEditor">
+			<text>富文本编辑器</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toWrite">
+			<text>书写板</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toStarSingle">
+			<text>星星评分单个</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toStarMore">
+			<text>星星评分多个</text>
+		</view>
+		<view class="menu-li arrow arrowRight" bindtap="toAuthorize">
+			<text>经纬度授权</text>
+		</view>
+	</view>
 </view>

@@ -1,0 +1,15 @@
+<!--pages/signOneName/signOneName.wxml-->
+<canvas class='signCanvas' style='height:{{height}}px' canvas-id="signCanvas" bindtouchmove='move' bindtouchstart='start' bindtouchend='end' bindtouchcancel='cancel' bindlongtap='tap' disable-scroll='true' binderror='error' />
+<cover-view class='tip_text' style='top:{{(height-28.125)/2}}px'>
+  请在下方签名
+</cover-view>
+<view class='sign-layout'>
+  <view class='warning-layout'>
+    <view class='tip'></view>
+    <text class='txt'>请将手机逆时针旋转90度后在规定区域完成姓名签署</text>
+  </view>
+  <view class='btn_layout'>
+    <button class='sign_btn clear_btn' catchtap='clear'>重新签名</button>
+    <button class='sign_btn save_btn' disabled="{{isSign}}" catchtap='save'>确认</button>
+  </view>
+</view>

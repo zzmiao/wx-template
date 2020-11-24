@@ -92,6 +92,9 @@ function canvasWorkBreak(maxWidth, fontSize, text) {
     }
   }
 }
+function rpx2px(rpx, windowWidth) {
+  return Math.round(rpx / 750 * windowWidth);
+}
 
 
 module.exports = {
@@ -100,5 +103,6 @@ module.exports = {
   verifyIDcard: checkIdNumber,
   compareVersion: compareVersion,
   chekString: chekString,
-  canvasWorkBreak: canvasWorkBreak
+  canvasWorkBreak: canvasWorkBreak,
+  rpx2px:rpx2px
 }
